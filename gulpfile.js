@@ -36,6 +36,7 @@ gulp.task( 'symbols', function(  )
         export: 'artboards',
         formats: 'svg'
     } ) )
+    .on( 'error', handleError )
     .pipe( svgSymbols ( {
         templates: [ 'default-svg' ]
     } ) )
