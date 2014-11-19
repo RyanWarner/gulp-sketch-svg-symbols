@@ -3,12 +3,15 @@ var gutil        = require( 'gulp-util' );
 
 var sketch       = require( 'gulp-sketch' );
 var svgSymbols   = require( 'gulp-svg-symbols' );
+var rename       = require( 'gulp-rename' );
 
 
 
 // File locations.
 
-var SKETCH_FILE = 'icons.sketch';
+var SKETCH_FILE      = 'icons.sketch';
+var SVG_OUTPUT_DIR   = './';
+var SVG_FILENAME     = 'symbols.svg';
 
 
 
@@ -33,8 +36,9 @@ gulp.task( 'symbols', function(  )
         export: 'artboards',
         formats: 'svg'
     } ) )
-    .pipe( svgSymbols( {
+    .pipe( svgSymbols ( {
         templates: [ 'default-svg' ]
     } ) )
-    .pipe( gulp.dest(  './images/' ) );
+    .pipe( rename( SVG_FILENAME ) )
+    .pipe( gulp.dest(  SVG_OUTPUT_DIR ) );
 } );
