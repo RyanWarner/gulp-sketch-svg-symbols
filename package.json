@@ -1,0 +1,30 @@
+{
+  "name": "gulp-sketch-svg-symbols",
+  "version": "0.0.0",
+  "description": "Prepares svg icons for web use from Sketch artboards.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RyanWarner/gulp-sketch-svg-symbols.git"
+  },
+  "keywords": [
+    "gulp",
+    "sketch",
+    "svg"
+  ],
+  "author": "Ryan Warner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyanWarner/gulp-sketch-svg-symbols/issues"
+  },
+  "homepage": "https://github.com/RyanWarner/gulp-sketch-svg-symbols",
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-svg-symbols": "~0.3.1",
+    "gulp-sketch": "0.0.6",
+    "gulp-util": "~3.0.1"
+  }
+}
